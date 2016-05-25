@@ -10,8 +10,8 @@ var chalk = require('chalk');
 gulp.task('serve-static', function(){
   gulp.src('.')
     .pipe(webserver({
-      https: true,
-      port: '8443',
+      https: false,
+      port: '9000',
       host: 'localhost',
       directoryListing: true,
       fallback: 'index.html'
